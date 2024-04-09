@@ -1,5 +1,4 @@
-# Non_Linear_ROV_PID_MATLAB
-Theory
+# Non Linear ROV PID Theory
 
 The following is a team project and we aim at physical implementation of the following model (Non-linear) in future. The following content deals with building a PID based control system for a Remotely operated underwater vehicle(ROV). The main challenge in implementing this is because the bot will be prone to many non-linearities underwater. 
 
@@ -27,7 +26,7 @@ This method can be used to tune our PID both in the case where we have a working
 After these parameters are evaluated controller gains can simply be calculated from the below table:
 
 
-![6d62357c0240e75662ff3c0e1fe7be3e.png](../_resources/52332960fe1046339d5f8f5fa5dcfd67.png)
+![6d62357c0240e75662ff3c0e1fe7be3e.png](_resources/52332960fe1046339d5f8f5fa5dcfd67.png)
 
 
 4) **Controller Models:**
@@ -50,7 +49,7 @@ So, lambda(𝜆) is used to tune the 6-DoF predictive force.
 This is shown in the following block:
 
 
-![e8fe240722b97ff01cc6a4190694cc3f.png](../_resources/d811d9409d9843aa9b5c60d1107003b0.png)
+![e8fe240722b97ff01cc6a4190694cc3f.png](_resources/d811d9409d9843aa9b5c60d1107003b0.png)
 
 
 Where ‘A’ is the new controller output.
@@ -59,19 +58,19 @@ Where ‘A’ is the new controller output.
 The PID controller gains(Kp, Ki and Kd) for the non-linear model are found out by Ziegler Nichols method and were found out to be as follows:
 
 
-![fe6dbb5745ef6800216b5a3d32d63187.png](../_resources/129f58e9c2f24d07949ee84f266e825c.png)
+![fe6dbb5745ef6800216b5a3d32d63187.png](_resources/129f58e9c2f24d07949ee84f266e825c.png)
 
 
 Finally, the control law for the nonlinear model-based PID controller is computed given by:
 
 
-![3589babf62fbea27ed46fc2d89aa35d7.png](../_resources/3266f33f3292482abd0f116229289515.png)
+![3589babf62fbea27ed46fc2d89aa35d7.png](_resources/3266f33f3292482abd0f116229289515.png)
 
 
 The final model for this system is shown below:
 
 
-![f19c09e97f93f0911ae4bf17dbeb2576.png](../_resources/f3fc12aa6d8a4a3d95ed3389f4b3b541.png)
+![f19c09e97f93f0911ae4bf17dbeb2576.png](_resources/f3fc12aa6d8a4a3d95ed3389f4b3b541.png)
 
 
 Here, we took desired position input as [1; 1; 2; 0; 0; 0].
@@ -85,7 +84,7 @@ For desired positional input as [1; 1; 2; 0; 0; 0], we got the following results
 Desired output: 1 m
 
 
-![6c4497a819a14611b434408d2b840cea.png](../_resources/eb8411ac6bf84469932bf6e0953a223e.png)
+![6c4497a819a14611b434408d2b840cea.png](_resources/eb8411ac6bf84469932bf6e0953a223e.png)
 
 
 
@@ -93,7 +92,7 @@ Desired output: 1 m
 Desired output: 1 m
 
 
-![f0d6456818c32efc7a8396b70cf65a5b.png](../_resources/c57042350e174e569fbb0a2fbde7be89.png)
+![f0d6456818c32efc7a8396b70cf65a5b.png](_resources/c57042350e174e569fbb0a2fbde7be89.png)
 
 
 
@@ -101,7 +100,7 @@ Desired output: 1 m
 Desired output: 2 m
 
 
-![2b7a2cb84c02c6fd815a8337972f5c42.png](../_resources/e68ffc2359ac45ceb0f861486b3ddbe5.png)
+![2b7a2cb84c02c6fd815a8337972f5c42.png](_resources/e68ffc2359ac45ceb0f861486b3ddbe5.png)
 
 
 
@@ -109,7 +108,7 @@ Desired output: 2 m
 Desired output: 0 rad
 
 
-![2fbc87c6757c50cf0ad43df0d079c012.png](../_resources/5ddad0dc188045598508698457d50be5.png)
+![2fbc87c6757c50cf0ad43df0d079c012.png](_resources/5ddad0dc188045598508698457d50be5.png)
 
 
 
@@ -117,7 +116,7 @@ Desired output: 0 rad
 Desired output: 0 rad
 
 
-![a4a80de355e7d85284f09286e812d113.png](../_resources/dc39b68c1cf747968f2ab5954fccce0e.png)
+![a4a80de355e7d85284f09286e812d113.png](_resources/dc39b68c1cf747968f2ab5954fccce0e.png)
 
 
 
@@ -125,14 +124,14 @@ Desired output: 0 rad
 Desired output: 0 rad
 
 
-![d23f8327ad6daf6c43da413ee9008f73.png](../_resources/deff84a9affd4c869b854651efb92ef5.png)
+![d23f8327ad6daf6c43da413ee9008f73.png](_resources/deff84a9affd4c869b854651efb92ef5.png)
 
 
 
 The controller input plots (controller input for each thruster will be as follows):
 
 
-![80835ab6d570de6cd5bb53d4d59e758a.png](../_resources/156d740230b54c1fa19999bc70578f28.png)
+![80835ab6d570de6cd5bb53d4d59e758a.png](_resources/156d740230b54c1fa19999bc70578f28.png)
 
 
 
