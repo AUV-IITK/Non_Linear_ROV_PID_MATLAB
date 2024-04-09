@@ -5,7 +5,7 @@ The following is a team project and we aim at physical implementation of the fol
 
 So, the basic mathematical model of an ROV is given by:
 
-![830cef13b07bfbf4c5cb1a011b4da28f.png](../_resources/ba15e74a6af343f78d3d633cdd888975.png)
+![830cef13b07bfbf4c5cb1a011b4da28f.png](_resources/ba15e74a6af343f78d3d633cdd888975.png)
 
 
 
